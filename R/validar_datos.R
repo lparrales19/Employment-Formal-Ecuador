@@ -77,7 +77,7 @@ validar_tipos <- function(datos, tipos_esperados){
 # Función:
 #   validar_duplicados()
 #
-# Descripción:
+# Descripción: 
 #   Verifica la existencia de registros duplicados.
 #
 # Parámetros:

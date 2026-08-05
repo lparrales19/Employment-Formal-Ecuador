@@ -21,5 +21,5 @@ guardar_rds <- function(datos, ruta_archivo){
 #   Guarda un conjunto de datos en formato .csv.
 # ------------------------------------------------------------------------------
 guardar_csv <- function(datos, ruta_archivo){
-  
+   
 }

@@ -69,7 +69,7 @@ mostrar_resumen <- function(mensaje,
 #   Calcula el tiempo de ejecución de un proceso.
 #
 # Parámetros:
-#   tiempo_inicio : Instante inicial.
+#   tiempo_inicio : Instante inicial. 
 #   tiempo_fin    : Instante final.
 #
 # Valor de retorno:
