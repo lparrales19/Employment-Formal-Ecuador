@@ -17,8 +17,18 @@
 # ------------------------------------------------------------------------------
 crear_directorio <- function(ruta_directorio){
   
+  if(!dir.exists(ruta_directorio)){
+    
+    dir.create(
+      path = ruta_directorio,
+      recursive = TRUE
+    )
+    
+  }
+  
+  return(dir.exists(ruta_directorio))
+  
 }
-
 # ------------------------------------------------------------------------------
 # Función:
 #   crear_nombre_archivo()
