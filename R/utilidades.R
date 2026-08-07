@@ -50,6 +50,20 @@ crear_nombre_archivo <- function(prefijo,
                                  mes,
                                  extension){
   
+  mes <- sprintf("%02d", as.integer(mes))
+  
+  nombre_archivo <- paste0(
+    prefijo,
+    "_",
+    anio,
+    "_",
+    mes,
+    ".",
+    extension
+  )
+  
+  return(nombre_archivo)
+  
 }
 
 # ------------------------------------------------------------------------------
