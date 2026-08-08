@@ -67,7 +67,14 @@ validar_datos_vacios <- function(datos){
 # Valor de retorno:
 #   TRUE si todas las columnas existen.
 # ------------------------------------------------------------------------------
-validar_columnas <- function(datos, columnas_requeridas){
+validar_columnas <- function(datos, columnas_esperadas){
+  
+  columnas_faltantes <- setdiff(
+    columnas_esperadas,
+    names(datos)
+  )
+  
+  return(length(columnas_faltantes) == 0)
   
 }
 
