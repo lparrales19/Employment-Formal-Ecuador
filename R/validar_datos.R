@@ -94,8 +94,20 @@ validar_columnas <- function(datos, columnas_esperadas){
 # ------------------------------------------------------------------------------
 validar_tipos <- function(datos, tipos_esperados){
   
+  tipos_reales <- sapply(
+    datos[names(tipos_esperados)],
+    class
+  )
+  
+  tipos_reales <- sapply(
+    tipos_reales,
+    `[`,
+    1
+  )
+  
+  return(all(tipos_reales == tipos_esperados))
+  
 }
-
 # ------------------------------------------------------------------------------
 # Función:
 #   validar_duplicados()
