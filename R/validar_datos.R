@@ -37,6 +37,20 @@ verificar_archivo <- function(ruta_archivo){
 # ------------------------------------------------------------------------------
 validar_datos_vacios <- function(datos){
   
+  if(is.null(datos)){
+    return(FALSE)
+  }
+  
+  if(!is.data.frame(datos)){
+    return(FALSE)
+  }
+  
+  if(nrow(datos) == 0){
+    return(FALSE)
+  }
+  
+  return(TRUE)
+  
 }
 
 # ------------------------------------------------------------------------------
