@@ -11,6 +11,13 @@
 # ------------------------------------------------------------------------------
 guardar_rds <- function(datos, ruta_archivo){
   
+  saveRDS(
+    object = datos,
+    file = ruta_archivo
+  )
+  
+  return(file.exists(ruta_archivo))
+  
 }
 
 # ------------------------------------------------------------------------------
