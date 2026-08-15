@@ -123,4 +123,8 @@ validar_tipos <- function(datos, tipos_esperados){
 # ------------------------------------------------------------------------------
 validar_duplicados <- function(datos){
   
-}
+  duplicados <- duplicated(datos)
+  
+  return(!any(duplicados))
+  
+} 
