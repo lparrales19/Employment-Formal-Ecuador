@@ -2,6 +2,8 @@
 #                            GUARDAR DATOS
 # ==============================================================================#
 
+library(readr)
+
 # ------------------------------------------------------------------------------
 # Función:
 #   guardar_rds()
@@ -28,5 +30,12 @@ guardar_rds <- function(datos, ruta_archivo){
 #   Guarda un conjunto de datos en formato .csv.
 # ------------------------------------------------------------------------------
 guardar_csv <- function(datos, ruta_archivo){
-   
+  
+  write_csv(
+    x = datos,
+    file = ruta_archivo
+  )
+  
+  return(file.exists(ruta_archivo))
+  
 }
